@@ -1,0 +1,5 @@
+3.a) if the upload speed of the server is less than the average upload speed of the users, then we will experience a bottle neck at the servers upload link. Therefore, we will be bounded by the size of the file, F, and the upload speed of the server, us. Therefore, we will have a distribution time of F/us
+
+b) if the upload speed of the server is larger than the average upload speed of the users, then we will be bound by the users ability to resend their recieved packets to eachother. We will have to send a total of NF bits, F bits per user, and we will be able to upload the bits at a total rate of (us + u1 + u2...+uN) bits/second. We will therefore have a distribution time of NF/(us + u1 + u2...+uN)
+
+c) since these two cases cover all possible values for the upload speed of the server relative to the average upload speed, the distribution time will always be defined by one of these formulas. In the case that the server speed is equal to the average upload speed, the distribution time will be equal to the maximum of the two values.
